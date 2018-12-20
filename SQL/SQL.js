@@ -8,7 +8,7 @@
 //读取config数据库文件
 const sqlite = require('./Config.js');
 
-//查询 talbe(表名), column(列名), where(位置)
+//查询 table(表名), column(列名), where(位置)
 function Select(table, column, where) {
   return new Promise(function (resolve, reject) {
     column = (column === null) ? '*' : column;
